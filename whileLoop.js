@@ -30,8 +30,6 @@ while (!runnersExceed100) {
     tysonGay += secondRandom;
     runnersExceed100 = ussainBolt >= 100 || tysonGay >= 100;
 }
-let winner;
-ussainBolt > tysonGay ? winner = "Ussain Bolt" : winner = "Tyson Gay";
+let winner = ussainBolt > tysonGay ? "Ussain Bolt" : "Tyson Gay";
 console.log(winner);
-
 
