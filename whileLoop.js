@@ -1,5 +1,5 @@
 // 01 - Comptons
-/*
+
 let n = 50;
 while (n <= 200) {
     if (n % 2 === 0) {
@@ -17,25 +17,21 @@ while (dice < 6) {
     dice = score;
     count ++;
 }
-console.log(count); */
+console.log(count); 
 
 // 03 - Course
 let ussainBolt = 0,
     tysonGay = 0;
-let lessThan100 = ussainBolt < 100 || tysonGay < 100;
-while (lessThan100) {
+let runnersExceed100 = ussainBolt >= 100 || tysonGay >= 100;
+while (!runnersExceed100) {
     let firstRandom = Math.floor(Math.random() * 10 + 1),
         secondRandom = Math.floor(Math.random() * 10 + 1);
     ussainBolt += firstRandom;
     tysonGay += secondRandom;
-    lessThan100 = ussainBolt < 100 || tysonGay < 100;
-    console.log(firstRandom);
-    console.log(secondRandom);
+    runnersExceed100 = ussainBolt >= 100 || tysonGay >= 100;
 }
-// if (ussainBolt > tysonGay) {
-//     console.log("Ussain Bolt won! Result: ", ussainBolt);
-// } else if (tysonGay > ussainBolt) {
-//     console.log("Tyson Gay won! Result: ", tysonGay);
-// } else {
-//     console.log('Equal');
-// }
+let winner;
+ussainBolt > tysonGay ? winner = "Ussain Bolt" : winner = "Tyson Gay";
+console.log(winner);
+
+
